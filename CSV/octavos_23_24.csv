@@ -1,0 +1,17 @@
+rango,equipo,p_jugados,p_ganados,p_empatados,p_perdidos,goles_a_favor,goles_en_contra,diferencia_de_goles,puntos
+R16,eng Manchester City,7,7,0,0,21,8,+13,21
+R16,es Real Madrid,7,7,0,0,17,7,+10,21
+R16,de Bayern Munich,7,5,1,1,12,7,+5,16
+R16,pt Porto,7,5,0,2,16,8,+8,15
+R16,it Inter,7,4,3,0,9,5,+4,15
+R16,es Atlético Madrid,7,4,2,1,17,7,+10,14
+R16,eng Arsenal,7,4,1,2,16,5,+11,13
+R16,es Barcelona,7,4,1,2,13,7,+6,13
+R16,it Lazio,7,4,1,2,8,7,+1,13
+R16,de Dortmund,7,3,3,1,8,5,+3,12
+R16,es Real Sociedad,7,3,3,1,7,4,+3,12
+R16,de RB Leipzig,7,4,0,3,13,11,+2,12
+R16,fr Paris S-G,7,3,2,2,11,8,+3,11
+R16,it Napoli,7,3,2,2,11,10,+1,11
+R16,nl PSV Eindhoven,7,2,4,1,9,11,-2,10
+R16,dk FC Copenhagen,7,2,2,3,9,11,-2,8
