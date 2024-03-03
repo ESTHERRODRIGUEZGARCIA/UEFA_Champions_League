@@ -1,4 +1,0 @@
-CSV_RL/todos.csv aquí he juntado todos, pero al hacer el estudio igual no me sale bien por el número de partidos jugados, ya que en 23-24 aun no se han jugado todos los partidos
-CSV_RL/resultados_23_24.csv
-temporadas/global_temp_con_puntos.csv
-
