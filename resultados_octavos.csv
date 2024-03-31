@@ -1,0 +1,10 @@
+Equipo,resultado_ida,goles_favor_ida,goles_contra_ida,resultado_vuelta,goles_favor_vuelta,goles_contra_vuelta,penales
+Arsenal,derrota,0,1,victoria,1,0,"{'resultado': 'victoria', 'goles_favor': 4, 'goles_contra': 2}"
+Barcelona,empate,1,1,victoria,3,1,
+Real Sociedad,derrota,0,2,derrota,1,4,
+Inter,victoria,1,0,derrota,1,2,"{'resultado': 'derrota', 'goles_favor': 2, 'goles_contra': 4}"
+Atlético Madrid,derrota,0,1,victoria,2,1,"{'resultado': 'victoria', 'goles_favor': 4, 'goles_contra': 2}"
+PSV Eindhoven,empate,1,1,derrota,0,2,
+Dortmund,empate,1,1,victoria,2,0,
+Lazio,victoria,1,0,derrota,0,3,
+Real Madrid,victoria,1,0,empate,1,1,
