@@ -24,7 +24,7 @@ ax.scatter([0, 0, 1, 1, 2], [3, 1, 3, 1, 2], s=[100]*5, c=[colors['semifinales']
 
 # Etiquetas de los nodos
 for i, txt in enumerate(semifinales + finalistas + [campeon]):
-    ax.text(i//3 + (i%3!=2)*0.05, [3, 1, 3, 1, 2][i] + 0.1, txt, fontsize=11, ha='center', va='center')
+    ax.text(i//3 + (i%3!=2)*0.05, [3, 1, 4, 1, 3][i] + 0.1, txt, fontsize=11, ha='center', va='center')
 
 # Ajustes finales del gráfico
 ax.set_xlim(-0.5, 2.5)
