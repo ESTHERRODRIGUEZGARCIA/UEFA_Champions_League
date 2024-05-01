@@ -5,7 +5,7 @@ import pandas as pd
 # Establecer estilo de los gráficos
 sns.set(style="whitegrid")
 #datos_semis_df = abrir csv: datos_gradio/datos_semis
-datos_semis_df = pd.read_csv('datos_gradio/datos_semis.csv')
+datos_semis_df = pd.read_csv('semis/datos_semis.csv')
 
 # Estadísticas descriptivas de los datos de semifinales
 semis_stats = datos_semis_df.describe()

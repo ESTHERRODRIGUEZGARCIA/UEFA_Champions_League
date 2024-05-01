@@ -1,0 +1,19 @@
+﻿"Año";"Periodo";"Parámetro";"Goles"
+"2024";"Año";"Bayern";"18"
+"2024";"Año";"Dortmund";"15"
+"2024";"Año";"PSG";"19"
+"2024";"Año";"Real Madrid";"22"
+;;
+;;
+"Métrica":"Goles"
+"Fuente":"<a href="https://www.driblab.com/es/" target="_blank">https://www.driblab.com/es/</a>"
+"Clasificación":""
+"Unidad":"Total"
+"Escala":"Unidades"
+"EscalaFactorPotencia10":"0"
+"SonDatosNumericos":"True"
+;;
+;;
+"Url":"https://www.epdata.es/equipos-mas-goleadores/91258229-88ea-44cb-af17-519d3364f4c1"
+"Titulo":"Equipos más goleadores"
+"Subtitulo":"UEFA Champions League 23-24"
