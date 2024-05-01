@@ -1,6 +1,6 @@
 # main.py
 import data_loader
-import basic_analysis
+import analisis_arbol_bosque
 import advanced_analysis
 import linear_regression
 
@@ -12,7 +12,7 @@ def main():
     choice = input("Ingrese su opción: ")
     
     if choice == '1':
-        basic_analysis.run_basic_analysis()
+        analisis_arbol_bosque.run_basic_analysis()
     elif choice == '2':
         advanced_analysis.run_advanced_analysis()
     elif choice == '3':
@@ -22,3 +22,7 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+
+
+#añadir un apartado de graficas sobre las semis: stats.py
