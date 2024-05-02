@@ -4,14 +4,14 @@ from pyspark.ml.feature import StringIndexer
 from pyspark.ml import Pipeline
 from pyspark.ml.evaluation import MulticlassClassificationEvaluator
 from spark_session import start_spark_session
-from data_processing import create_dataframe
+from data_processing import create_spark_dataframe_from_api
 
 def run_analysis():
     # Iniciar sesión de Spark
     spark = start_spark_session()
     
     # Crear DataFrame
-    df = create_dataframe()
+    df = create_spark_dataframe_from_api()
     
     if not df.empty:
         # Convertir DataFrame de pandas a DataFrame de Spark
