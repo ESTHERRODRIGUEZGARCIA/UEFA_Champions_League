@@ -10,7 +10,7 @@ response = requests.get(url, headers=headers)
 teams = response.json()
 
 # Filtra para obtener solo los equipos de interés por nombre
-interested_teams = ['Real Madrid CF', 'FC Bayern München', 'Paris Saint-Germain', 'Borussia Dortmund']
+interested_teams = ['Real Madrid CF', 'FC Bayern München', 'Paris Saint-Germain FC', 'Borussia Dortmund']
 filtered_teams = {team['name']: team['id'] for team in teams['teams'] if team['name'] in interested_teams}
 
 print(filtered_teams)
