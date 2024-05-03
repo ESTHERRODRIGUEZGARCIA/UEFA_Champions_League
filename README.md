@@ -18,7 +18,7 @@ Resultado final de la regresión lineal:
 
 
 
-## Modelo de árbol de decisión y bosques aleatorios: 
+# Modelo de árbol de decisión y bosques aleatorios: 
 
 - Objetivo del modelo: predecir el ganador de las semifinales de la UEFA Champions League y, finalmente, predecir el campeón del torneo. Utiliza un modelo de bosque aleatorio para estimar las probabilidades de que cada equipo tenga una alta probabilidad de ganar basándose en varias estadísticas y rendimientos históricos.
 
@@ -43,3 +43,26 @@ Estos datos se agregan para cada equipo y se combinan con las estadísticas de l
 - Finalmente, se simula un enfrentamiento entre los dos ganadores de las semifinales para determinar el campeón del torneo.
 
 Este modelo intenta aprovechar tanto el rendimiento actual como el histórico para hacer predicciones informadas sobre los resultados de los partidos, considerando una amplia gama de factores que pueden influir en el desempeño del equipo.
+
+# Modelo predictivo basado en redes neuronales: 
+Preprocesamiento de Datos:
+
+- Normalización: Los datos numéricos fueron normalizados usando MinMaxScaler para asegurar que todas las características tengan el mismo peso durante el entrenamiento del modelo.
+- Etiquetado: Se utilizó LabelEncoder para transformar las etiquetas categóricas de los nombres de los equipos en valores numéricos que el modelo puede procesar.
+  
+### Modelo Predictivo
+Se desarrolló una red neuronal utilizando TensorFlow y Keras con la siguiente arquitectura:
+
+- Capa de entrada: Recibe las características normalizadas de los equipos.
+- Capas ocultas: Dos capas densas con 128 y 64 neuronas respectivamente, cada una seguida de una capa de abandono (Dropout) para reducir el sobreajuste.
+- Capa de salida: Una capa densa con una función de activación softmax, que proporciona las probabilidades de que cada equipo sea el ganador.
+### Entrenamiento del Modelo
+El modelo se entrenó con los datos combinados y normalizados de todos los equipos participantes, utilizando una función de pérdida de entropía cruzada y el optimizador Adam. Se llevó a cabo durante 100 épocas para permitir una convergencia adecuada del modelo.
+
+### Evaluación y Uso del Modelo
+El modelo se evaluó en términos de precisión durante el entrenamiento, mostrando cómo aprendía a clasificar correctamente entre los equipos. Para hacer predicciones, se prepararon los datos de los enfrentamientos específicos (e.g., Real Madrid vs. Bayern Munich), combinando las características de los dos equipos involucrados en cada partido. El modelo entonces predice las probabilidades de cada equipo para ganar el enfrentamiento.
+
+### Resultados y Observaciones
+El modelo demostró fluctuaciones en la precisión durante las primeras épocas de entrenamiento pero se estabilizó a medida que continuaba el proceso de entrenamiento. Las predicciones realizadas reflejan las probabilidades de cada equipo para ganar según las características presentadas, ofreciendo una herramienta útil para análisis predictivo en el contexto deportivo. Este modelo de red neuronal ofrece un enfoque sistemático y basado en datos para predecir los resultados de partidos de fútbol en un torneo de alta importancia. Con adecuadas mejoras y ajustes, podría extenderse para otras aplicaciones en análisis deportivo o adaptarse a diferentes conjuntos de datos y escenarios competitivos.
+
+
