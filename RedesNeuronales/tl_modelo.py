@@ -1,7 +1,7 @@
 from tensorflow.keras.models import load_model
 from tensorflow.keras.layers import Dense, Dropout
 from tensorflow.keras.optimizers import Adam
-from datos_transfer_learning import X_train, X_val, y_train, y_val, label_encoder
+from tl_datos import X_train, X_val, y_train, y_val, label_encoder
 
 # Cargar el modelo preentrenado
 model = load_model('RedesNeuronales/modelo_entrenado.h5')
