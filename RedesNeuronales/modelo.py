@@ -3,7 +3,6 @@ from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler, LabelEncoder
 import tensorflow as tf
 
-# Cargar datos
 datos_semis = pd.read_csv('datos_gradio/datos_semis.csv')
 
 # Seleccionar características y etiqueta
