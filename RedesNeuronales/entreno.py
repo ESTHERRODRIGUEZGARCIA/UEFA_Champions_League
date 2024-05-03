@@ -35,3 +35,6 @@ history = model.fit(X_full, y_full_encoded, epochs=100)  # Usando todos los dato
 
 # Mostrar la estructura del modelo
 model.summary()
+
+# Guardar el modelo entrenado
+model.save('RedesNeuronales/modelo_entrenado.h5')
