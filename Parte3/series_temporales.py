@@ -52,3 +52,19 @@ plt.xticks(rotation=45)
 plt.grid(True)
 plt.tight_layout()
 plt.show()
+
+# 4. Bayern München
+bayern_data = data_global_temp[data_global_temp['equipo'] == 'Bayern München']
+
+bayern_data = bayern_data.sort_values('SEASON')
+
+plt.figure(figsize=(10, 5))
+plt.plot(bayern_data['SEASON'], bayern_data['puntos'], marker='o', linestyle='-', color='red')
+plt.title('Puntos Acumulados por Temporada - Bayern de Múnich')
+plt.xlabel('Temporada')
+plt.ylabel('Puntos')
+plt.xticks(rotation=45)
+plt.grid(True)
+plt.tight_layout()
+plt.show()
+
