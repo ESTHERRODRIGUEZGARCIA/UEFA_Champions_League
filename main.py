@@ -6,8 +6,7 @@ from RedesNeuronales import *
 from regresion_lineal import *
 from semis.stats import *
 from model_SPARK import *
-import analisis_arbol_bosque
-import advanced_analysis
+
 
 def main():
     print("Seleccione el módulo de análisis a ejecutar:")
@@ -21,11 +20,13 @@ def main():
     print("8. Gráficas de estadísticas de los equipos semifinalistas ")
     choice = input("Ingrese su opción: ")
     if choice == "1":
-        regresion_lineal()
+        pass
+    elif choice == "5":
+        print("6. Análisis de Datos con Spark")
     elif choice == "8":
-        semis.stats()
+        graficas_semis()
 
-    
+
 
 if __name__ == "__main__":
     main()
