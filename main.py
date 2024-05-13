@@ -2,6 +2,8 @@
 from model_AB.analisis_arbol_bosque import model_a_b
 from model_AB.visual import grafica_model_a_b
 from semis.stats import *
+from Parte3.modelo_arima import model_arima
+from Parte3.modelo2_arima import model2_arima
 
 
 
@@ -13,7 +15,7 @@ def main():
     print("4. Redes Neuronales")
     print("5. Análisis de Árbol y Bosque")
     print("6. Análisis de Datos con Spark")
-    print("7. Análisis de Datos con Pandas")
+    print("7. Análisis de Datos con series temporales")
     print("8. Gráficas de estadísticas de los equipos semifinalistas ")
     choice = input("Ingrese su opción: ")
     if choice == "1":
@@ -21,6 +23,10 @@ def main():
     elif choice == "5":
         model_a_b()
         grafica_model_a_b()
+    elif choice == "7":
+        print("Primera opción: Modelo autorregresivo integrado de media móvil (ARIMA)")
+        model_arima()
+        model2_arima()
     elif choice == "8":
         graficas_semis()
 
