@@ -5,10 +5,10 @@ from Parte3 import *
 from RedesNeuronales import *
 from regresion_lineal import *
 from semis import *
+from model_SPARK import *
 
 import analisis_arbol_bosque
 import advanced_analysis
-import linear_regression
 
 def main():
     print("Seleccione el módulo de análisis a ejecutar:")
