@@ -1,5 +1,6 @@
 # main.py
 from model_AB.analisis_arbol_bosque import model_a_b
+from model_AB.visual import grafica_model_a_b
 from semis.stats import *
 
 
@@ -19,6 +20,7 @@ def main():
         pass
     elif choice == "5":
         model_a_b()
+        grafica_model_a_b()
     elif choice == "8":
         graficas_semis()
 
