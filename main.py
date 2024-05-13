@@ -1,5 +1,11 @@
 # main.py
-import data_loader
+from model_LLAMA3 import *
+from modelo_2 import *
+from Parte3 import *
+from RedesNeuronales import *
+from regresion_lineal import *
+from semis import *
+
 import analisis_arbol_bosque
 import advanced_analysis
 import linear_regression
