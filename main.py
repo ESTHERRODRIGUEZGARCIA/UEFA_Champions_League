@@ -1,11 +1,7 @@
 # main.py
-from model_LLAMA3 import *
-from modelo_2 import *
-from Parte3 import *
-from RedesNeuronales import *
-from regresion_lineal import *
+from model_AB.analisis_arbol_bosque import model_a_b
 from semis.stats import *
-from model_SPARK import *
+
 
 
 def main():
@@ -22,7 +18,7 @@ def main():
     if choice == "1":
         pass
     elif choice == "5":
-        print("6. Análisis de Datos con Spark")
+        model_a_b()
     elif choice == "8":
         graficas_semis()
 
