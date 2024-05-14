@@ -1,45 +1,28 @@
-from pyspark.sql.types import StructType, StructField, StringType, IntegerType, ArrayType, MapType
 from pyspark.sql import SparkSession
+import json
 
-# Crear una sesión de Spark
+# Inicializar la sesión de Spark
 spark = SparkSession.builder \
-    .appName("Ejemplo de lectura de JSON") \
+    .appName("ApuestasAnalysis") \
     .getOrCreate()
 
-# Definir el esquema del archivo JSON
-schema = StructType([
-    StructField("Real Madrid", StructType([
-        StructField("count", IntegerType(), True),
-        StructField("filters", MapType(StringType(), StringType()), True),
-        StructField("matches", ArrayType(
-            StructType([
-                StructField("id", StringType(), True),
-                StructField("utcDate", StringType(), True),
-                StructField("status", StringType(), True),
-                StructField("matchday", StringType(), True),
-                StructField("score", StructType([
-                    StructField("winner", StringType(), True),
-                    StructField("fullTime", StructType([
-                        StructField("homeTeam", IntegerType(), True),
-                        StructField("awayTeam", IntegerType(), True)
-                    ]), True)
-                ]), True),
-                StructField("homeTeam", StructType([
-                    StructField("name", StringType(), True)
-                ]), True),
-                StructField("awayTeam", StructType([
-                    StructField("name", StringType(), True)
-                ]), True),
-            ])
-        ), True)
-    ]), True),
-])
-
 # Leer el JSON con el esquema definido
-df = spark.read.schema(schema).json("SPARK/team_matches.json")
+df = spark.read.json("model_SPARK/team_matches.json")
 
 # Mostrar el esquema del DataFrame
 df.printSchema()
 
-# Mostrar los primeros 5 registros del DataFrame sin truncar las columnas
-df.show(5, truncate=False)
+# Seleccionar columnas relevantes y renombrar si es necesario
+matches_df = df.selectExpr("explode(matches) as match")
+
+# Expandir las columnas anidadas
+matches_df = matches_df.selectExpr("match.id", "match.competition.name as competition_name", 
+                                   "match.season.startDate as season_start", "match.season.endDate as season_end",
+                                   "match.utcDate as match_date", "match.status", "match.matchday",
+                                   "match.stage", "match.score.winner", "match.score.fullTime.homeTeam as home_score",
+                                   "match.score.fullTime.awayTeam as away_score",
+                                   "match.homeTeam.name as home_team", "match.awayTeam.name as away_team")
+
+# Mostrar los datos limpios
+matches_df.show()
+

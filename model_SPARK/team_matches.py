@@ -19,5 +19,5 @@ for team, team_id in team_ids.items():
         print(f"Failed to fetch matches for {team}")
 
 # Optional: Guardar los datos en un archivo para evitar múltiples llamadas a la API
-with open('SPARK/team_matches.json', 'w') as f:
+with open('model_SPARK/team_matches.json', 'w') as f:
     json.dump(team_matches, f, indent=4)

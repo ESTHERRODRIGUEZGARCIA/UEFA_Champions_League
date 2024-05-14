@@ -22,7 +22,7 @@ for team, team_id in teams.items():
     matches_data[team] = fetch_team_matches(team_id, api_key)
 
 # Crear la carpeta SPARK si no existe
-carpeta_resultados = 'SPARK'
+carpeta_resultados = 'model_SPARK'
 if not os.path.exists(carpeta_resultados):
     os.makedirs(carpeta_resultados)
 

@@ -8,4 +8,4 @@ response = requests.get(url, headers=headers)
 matches = response.json()['matches']
 
 df = pd.DataFrame(matches)
-df.to_csv('SPARK/real_madrid_matches.csv', index=False)
+df.to_csv('model_SPARK/real_madrid_matches.csv', index=False)
