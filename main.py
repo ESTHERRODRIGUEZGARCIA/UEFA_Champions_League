@@ -21,7 +21,7 @@ def main():
     if choice == "1":
         pass
     elif choice == "4":
-        pass
+        probabilidad_semis()
     elif choice == "5":
         model_a_b()
         grafica_model_a_b()
