@@ -50,6 +50,10 @@ El archivo `main.py` es el punto de entrada principal para la ejecución de vari
 - Descripción: Intenta realizar un análisis de datos utilizando Spark.
 - Método: Planificado para utilizar Spark para procesar grandes volúmenes de datos, pero no implementado.
 
+# Informe de Progreso: Análisis Predictivo y Estadístico de la UEFA Champions League
+
+Informe realizado a medida que se completaba el proyecto
+
 ## Parte de Regresión Lineal
 En este repositorio, se lleva a cabo una refinación de la información obtenida en la entrega previa de análisis de datos, con el propósito de mejorar su calidad y relevancia. Este proceso implica una revisión exhaustiva de los datos previamente recopilados, así como la incorporación de nuevas métricas y técnicas analíticas para obtener una comprensión más profunda y precisa del panorama actual.
 
@@ -63,7 +67,7 @@ Resultado final de la regresión lineal:
 
 
 
-# Modelo de árbol de decisión y bosques aleatorios: 
+## Modelo de árbol de decisión y bosques aleatorios: 
 
 - Objetivo del modelo: predecir el ganador de las semifinales de la UEFA Champions League y, finalmente, predecir el campeón del torneo. Utiliza un modelo de bosque aleatorio para estimar las probabilidades de que cada equipo tenga una alta probabilidad de ganar basándose en varias estadísticas y rendimientos históricos.
 
@@ -89,7 +93,7 @@ Estos datos se agregan para cada equipo y se combinan con las estadísticas de l
 
 Este modelo intenta aprovechar tanto el rendimiento actual como el histórico para hacer predicciones informadas sobre los resultados de los partidos, considerando una amplia gama de factores que pueden influir en el desempeño del equipo.
 
-# Modelo predictivo basado en redes neuronales: 
+## Modelo predictivo basado en redes neuronales: 
 Preprocesamiento de Datos:
 
 - Normalización: Los datos numéricos fueron normalizados usando MinMaxScaler para asegurar que todas las características tengan el mismo peso durante el entrenamiento del modelo.
