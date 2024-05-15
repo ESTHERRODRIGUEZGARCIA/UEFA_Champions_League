@@ -8,7 +8,47 @@ Trabajo hecho por:
 
 
 # INDICACIONES:
-El archivo `main.py` sirve como punto central para la ejecución de varios módulos de análisis de datos y modelos predictivos relacionados con la UEFA Champions League. Mediante un menú interactivo, el usuario puede seleccionar y ejecutar diferentes tipos de análisis y visualizaciones. Las opciones incluyen: un modelo de regresión lineal que estima las probabilidades de ganar la Champions League 2023-2024 desde los octavos de final; un análisis avanzado de regresión lineal para predecir el ganador final; predicciones basadas en redes neuronales; modelos de árbol de decisión y bosque aleatorio para análisis predictivo, junto con sus visualizaciones correspondientes; análisis de datos de series temporales utilizando modelos ARIMA; y la generación de gráficas y estadísticas detalladas de los equipos semifinalistas. Además, se incluyen intentos de realizar análisis avanzados con LangChain y Llama 3, así como con Spark, aunque estos no se han implementado con éxito. El programa permite la ejecución continua de múltiples análisis hasta que el usuario decida finalizar.
+El archivo `main.py` es el punto de entrada principal para la ejecución de varios módulos de análisis de datos y modelos predictivos relacionados con la UEFA Champions League. Este script ofrece un menú interactivo que permite a los usuarios seleccionar y ejecutar diferentes tipos de análisis y visualizaciones, proporcionando una comprensión detallada del desempeño y las probabilidades de éxito de los equipos participantes.
+### Opciones del menú
+1. Regresión Lineal:
+
+- Descripción: Estima las probabilidades de ganar la Champions League 2023-2024 desde los octavos de final.
+- Método: Utiliza un modelo de regresión lineal basado en datos históricos y estadísticas actuales.
+
+2. Regresión Lineal con Ganador Final:
+
+- Descripción: Realiza un análisis avanzado de regresión lineal para predecir el ganador final del torneo.
+- Método: Incorpora métricas adicionales y técnicas analíticas para una predicción más precisa.
+
+3. Redes Neuronales:
+
+- Descripción: Predice los resultados de los partidos utilizando modelos de redes neuronales.
+- Método: Implementa una red neuronal con múltiples capas densas y funciones de activación para estimar las probabilidades de victoria.
+
+4. Análisis de Árbol y Bosque:
+
+- Descripción: Ejecuta modelos de árbol de decisión y bosque aleatorio para análisis predictivo.
+- Método: Utiliza características clave de los equipos para predecir el rendimiento y generar visualizaciones detalladas.
+
+5. Series Temporales (ARIMA):
+
+- Descripción: Analiza datos de series temporales utilizando modelos ARIMA para predicciones.
+- Método: Aplica modelos autorregresivos integrados de media móvil para capturar las tendencias y patrones en los datos históricos.
+
+6. Estadísticas de Equipos Semifinalistas:
+
+- Descripción: Genera gráficas y estadísticas detalladas de los equipos que han llegado a las semifinales.
+- Método: Visualiza datos de rendimiento y estadísticas clave de los equipos semifinalistas.
+
+7. Análisis Avanzado con LangChain y Llama 3 (no implementado):
+
+- Descripción: Intenta realizar un análisis avanzado utilizando herramientas de procesamiento de lenguaje natural y modelos avanzados.
+- Método: Planificado para utilizar LangChain y Llama 3 para análisis profundos, pero no implementado.
+
+8. Análisis de Datos con Spark (no implementado):
+
+- Descripción: Intenta realizar un análisis de datos utilizando Spark.
+- Método: Planificado para utilizar Spark para procesar grandes volúmenes de datos, pero no implementado.
 
 ## Parte de Regresión Lineal
 En este repositorio, se lleva a cabo una refinación de la información obtenida en la entrega previa de análisis de datos, con el propósito de mejorar su calidad y relevancia. Este proceso implica una revisión exhaustiva de los datos previamente recopilados, así como la incorporación de nuevas métricas y técnicas analíticas para obtener una comprensión más profunda y precisa del panorama actual.
