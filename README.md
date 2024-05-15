@@ -6,6 +6,11 @@ Click [aquí](https://github.com/ESTHERRODRIGUEZGARCIA/UEFA_Champions_League.git
 Trabajo hecho por:
 1. [Esther Rodríguez García](https://github.com/ESTHERRODRIGUEZGARCIA)
 
+
+# INDICACIONES:
+El archivo `main.py` sirve como punto central para la ejecución de varios módulos de análisis de datos y modelos predictivos relacionados con la UEFA Champions League. Mediante un menú interactivo, el usuario puede seleccionar y ejecutar diferentes tipos de análisis y visualizaciones. Las opciones incluyen: un modelo de regresión lineal que estima las probabilidades de ganar la Champions League 2023-2024 desde los octavos de final; un análisis avanzado de regresión lineal para predecir el ganador final; predicciones basadas en redes neuronales; modelos de árbol de decisión y bosque aleatorio para análisis predictivo, junto con sus visualizaciones correspondientes; análisis de datos de series temporales utilizando modelos ARIMA; y la generación de gráficas y estadísticas detalladas de los equipos semifinalistas. Además, se incluyen intentos de realizar análisis avanzados con LangChain y Llama 3, así como con Spark, aunque estos no se han implementado con éxito. El programa permite la ejecución continua de múltiples análisis hasta que el usuario decida finalizar.
+
+## Parte de Regresión Lineal
 En este repositorio, se lleva a cabo una refinación de la información obtenida en la entrega previa de análisis de datos, con el propósito de mejorar su calidad y relevancia. Este proceso implica una revisión exhaustiva de los datos previamente recopilados, así como la incorporación de nuevas métricas y técnicas analíticas para obtener una comprensión más profunda y precisa del panorama actual.
 
 Una vez completada la fase de refinación de datos, se procede a realizar una regresión lineal utilizando las variables relevantes identificadas en el análisis anterior. Esta regresión proporcionará un modelo predictivo que permitirá estimar las posibilidades de éxito de los equipos participantes en la Champions League de la temporada actual.
