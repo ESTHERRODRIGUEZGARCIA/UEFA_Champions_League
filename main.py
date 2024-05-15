@@ -8,8 +8,6 @@ from RedesNeuronales.prob_semis import *
 from regresion_lineal.reg_lin import modelo_regresion_lineal_uefa
 from regresion_lineal.parte3 import parte3_analisis
 
-
-
 def main():
     while True:
         print("Seleccione el módulo de análisis a ejecutar:")
@@ -46,10 +44,5 @@ def main():
             continue
 
 
-
 if __name__ == "__main__":
     main()
-
-
-
-#añadir un apartado de graficas sobre las semis: stats.py
