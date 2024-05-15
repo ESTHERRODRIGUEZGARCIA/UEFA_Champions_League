@@ -92,5 +92,4 @@ def modelo_regresion_lineal_uefa():
     for equipo, porcentaje in zip(equipos, porcentajes_equipo):
         print(f"{equipo}: {porcentaje:.2f}%")
 
-if __name__ == '__main__':
-    modelo_regresion_lineal_uefa()
+
