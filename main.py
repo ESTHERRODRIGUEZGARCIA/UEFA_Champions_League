@@ -5,6 +5,7 @@ from semis.stats import *
 from Parte3.modelo_arima import model_arima
 from Parte3.modelo2_arima import model2_arima
 from RedesNeuronales.prob_semis import *
+from regresion_lineal.reg_lin import modelo_regresion_lineal_uefa
 
 
 
@@ -20,7 +21,7 @@ def main():
         print("8. Gráficas de estadísticas de los equipos semifinalistas ")
         choice = input("Ingrese su opción: ")
         if choice == "1":
-            pass
+            modelo_regresion_lineal_uefa()
         elif choice == "4":
             probabilidad_semis()
         elif choice == "5":
