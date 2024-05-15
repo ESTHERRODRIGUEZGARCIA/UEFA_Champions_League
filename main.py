@@ -9,28 +9,35 @@ from RedesNeuronales.prob_semis import *
 
 
 def main():
-    print("Seleccione el módulo de análisis a ejecutar:")
-    print("1. regresión lineal (Probabilidades Estimadas de Ganar la Champions League 2023-2024 (%))")
-    print("2. NO FUNCIONA AÚN: Análisis Avanzado con LangChain y Llama 3")
-    print("4. Redes Neuronales")
-    print("5. Análisis de Árbol y Bosque")
-    print("6. NO FUNCIONA AÚN: Análisis de Datos con Spark")
-    print("7. Análisis de Datos con series temporales")
-    print("8. Gráficas de estadísticas de los equipos semifinalistas ")
-    choice = input("Ingrese su opción: ")
-    if choice == "1":
-        pass
-    elif choice == "4":
-        probabilidad_semis()
-    elif choice == "5":
-        model_a_b()
-        grafica_model_a_b()
-    elif choice == "7":
-        print("Primera opción: Modelo autorregresivo integrado de media móvil (ARIMA)")
-        model_arima()
-        model2_arima()
-    elif choice == "8":
-        graficas_semis()
+    while True:
+        print("Seleccione el módulo de análisis a ejecutar:")
+        print("1. regresión lineal (Probabilidades Estimadas de Ganar la Champions League 2023-2024 (%))")
+        print("2. NO FUNCIONA AÚN: Análisis Avanzado con LangChain y Llama 3")
+        print("4. Redes Neuronales")
+        print("5. Análisis de Árbol y Bosque")
+        print("6. NO FUNCIONA AÚN: Análisis de Datos con Spark")
+        print("7. Análisis de Datos con series temporales")
+        print("8. Gráficas de estadísticas de los equipos semifinalistas ")
+        choice = input("Ingrese su opción: ")
+        if choice == "1":
+            pass
+        elif choice == "4":
+            probabilidad_semis()
+        elif choice == "5":
+            model_a_b()
+            grafica_model_a_b()
+        elif choice == "7":
+            print("Primera opción: Modelo autorregresivo integrado de media móvil (ARIMA)")
+            model_arima()
+            model2_arima()
+        elif choice == "8":
+            graficas_semis()
+
+        repetir = input("¿Quieres ejecutar otro modelo? Sí:1 No:2 \n")
+        if repetir == "2":
+            break
+        else:
+            continue
 
 
 
